@@ -16,7 +16,6 @@
     <!-- @formatter:off -->
     <dependencyManagement>
         <dependencies>
-            <dependency><groupId>com.zzz.util</groupId><artifactId>jpa-util</artifactId><version>0.0.1-SNAPSHOT</version><type>pom</type><scope>import</scope></dependency>
             <dependency><groupId>com.zzz.oj</groupId><artifactId>oj-user-core</artifactId><version>${project.version}</version></dependency>
         </dependencies>
     </dependencyManagement>

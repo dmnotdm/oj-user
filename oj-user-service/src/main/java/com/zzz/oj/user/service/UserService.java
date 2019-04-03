@@ -3,6 +3,7 @@ package com.zzz.oj.user.service;
 import static com.zzz.oj.user.bean.enums.UserStatus.ENABLE;
 
 import com.zzz.oj.user.bean.entity.User;
+import com.zzz.oj.user.repository.UserRepository;
 import com.zzz.util.jpa.service.JpaService;
 
 import org.springframework.stereotype.Service;
@@ -13,6 +14,7 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class UserService extends JpaService<Long, User> {
+
     @Override
     public User createNew(User user) {
         Long now = System.currentTimeMillis();
@@ -20,5 +22,9 @@ public class UserService extends JpaService<Long, User> {
         user.setCreateTime(now);
         user.setStatus(ENABLE);
         return repository.save(user);
+    }
+
+    public User findByAccessKey(String accessKey) {
+        return ((UserRepository) repository).findTopByAccessKey(accessKey);
     }
 }

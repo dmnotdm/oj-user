@@ -1,14 +1,14 @@
 spring:
   application:
-    name: user-service
+    name: oj-user-service
   datasource:
     username: root
     password:
     url: jdbc:mysql://host.ip:3306/cmdtalk?characterEncoding=UTF-8
 server:
-  port: 9001
-  servlet:
-    context-path: /user
+  port: 0
+#  servlet:
+#    context-path: /user
 eureka:
   client:
     service-url:

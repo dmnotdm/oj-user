@@ -9,4 +9,5 @@ import org.springframework.data.jpa.repository.JpaRepository;
  * Description:
  */
 public interface UserRepository extends JpaRepository<User, Long> {
+    public User findTopByAccessKey(String accessKey);
 }
