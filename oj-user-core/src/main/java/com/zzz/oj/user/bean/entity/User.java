@@ -1,11 +1,9 @@
-package com.zzz.cmdtalk.user.bean.entity;
+package com.zzz.oj.user.bean.entity;
 
-import com.zzz.cmdtalk.user.bean.enums.UserStatus;
+import com.zzz.oj.user.bean.enums.UserStatus;
 import com.zzz.util.jpa.entity.JpaEntity;
 
 import lombok.Data;
-
-import java.util.Date;
 
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
@@ -27,10 +25,12 @@ public class User implements JpaEntity<Long> {
     private String username;
     private String nik;
     private String password;
+    private String accessKey;
+    private String secretKey;
     @Enumerated(EnumType.STRING)
     private UserStatus status;
-    private Date createTime;
-    private Date updateTime;
+    private Long createTime;
+    private Long updateTime;
 
     @Override
     public Long primaryKey() {

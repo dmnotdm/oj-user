@@ -1,4 +1,4 @@
-package com.zzz.cmdtalk.user.bean.enums;
+package com.zzz.oj.user.bean.enums;
 
 /**
  * Created by zhizhao.zhang on 2019/02/06 10:09.

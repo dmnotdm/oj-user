@@ -1,6 +1,6 @@
-package com.zzz.cmdtalk.user.repository;
+package com.zzz.oj.user.repository;
 
-import com.zzz.cmdtalk.user.bean.entity.User;
+import com.zzz.oj.user.bean.entity.User;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

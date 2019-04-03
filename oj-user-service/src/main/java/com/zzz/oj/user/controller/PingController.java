@@ -1,4 +1,4 @@
-package com.zzz.cmdtalk.user.controller;
+package com.zzz.oj.user.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;

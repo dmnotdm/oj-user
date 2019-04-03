@@ -1,6 +1,6 @@
-package com.zzz.cmdtalk.user.controller;
+package com.zzz.oj.user.controller;
 
-import com.zzz.cmdtalk.user.bean.entity.User;
+import com.zzz.oj.user.bean.entity.User;
 import com.zzz.util.jpa.controller.BaseController;
 
 import org.springframework.web.bind.annotation.RestController;

@@ -1,4 +1,6 @@
-import com.zzz.cmdtalk.user.bean.entity.User;
+package com.zzz.oj.user.client;
+
+import com.zzz.oj.user.bean.entity.User;
 import com.zzz.util.jpa.client.BaseClient;
 
 import org.springframework.cloud.openfeign.FeignClient;

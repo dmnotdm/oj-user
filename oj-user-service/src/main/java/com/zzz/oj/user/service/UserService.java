@@ -1,13 +1,11 @@
-package com.zzz.cmdtalk.user.service;
+package com.zzz.oj.user.service;
 
-import static com.zzz.cmdtalk.user.bean.enums.UserStatus.ENABLE;
+import static com.zzz.oj.user.bean.enums.UserStatus.ENABLE;
 
-import com.zzz.cmdtalk.user.bean.entity.User;
+import com.zzz.oj.user.bean.entity.User;
 import com.zzz.util.jpa.service.JpaService;
 
 import org.springframework.stereotype.Service;
-
-import java.util.Date;
 
 /**
  * Created by zhizhao.zhang on 2019/03/01 11:27.
@@ -17,7 +15,7 @@ import java.util.Date;
 public class UserService extends JpaService<Long, User> {
     @Override
     public User createNew(User user) {
-        Date now = new Date();
+        Long now = System.currentTimeMillis();
         user.setUpdateTime(now);
         user.setCreateTime(now);
         user.setStatus(ENABLE);

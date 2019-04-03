@@ -1,4 +1,4 @@
-package com.zzz.cmdtalk;
+package com.zzz.oj;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
