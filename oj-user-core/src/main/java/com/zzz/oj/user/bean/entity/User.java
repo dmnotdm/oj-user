@@ -9,6 +9,9 @@ import lombok.EqualsAndHashCode;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 /**
  * Created by zhizhao.zhang on 2019/02/04 23:54.
@@ -18,6 +21,9 @@ import javax.persistence.Enumerated;
 @Entity
 @EqualsAndHashCode(callSuper = false)
 public class User extends OJEntity {
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String username;
     private String nikName;
     private String password;
