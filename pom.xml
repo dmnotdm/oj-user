@@ -4,12 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>com.zzz</groupId>
+        <groupId>com.zzz.oj</groupId>
         <artifactId>online-judge</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.zzz.oj</groupId>
     <artifactId>oj-user</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
