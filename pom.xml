@@ -26,10 +26,6 @@
     </dependencies>
     <!-- @formatter:on -->
 
-    <properties>
-        <mainClass>com.zzz.oj.user.UserApplication</mainClass>
-    </properties>
-
     <modules>
         <module>oj-user-client</module>
         <module>oj-user-core</module>
