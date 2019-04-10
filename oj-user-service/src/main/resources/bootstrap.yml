@@ -4,7 +4,7 @@ spring:
   datasource:
     username: root
     password:
-    url: jdbc:mysql://host.ip:3306/cmdtalk?characterEncoding=UTF-8
+    url: jdbc:mysql://host.ip:3306/online_judge?characterEncoding=UTF-8
 server:
   port: 9001
 #  servlet:

@@ -8,6 +8,8 @@ import org.apache.commons.lang.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.util.List;
+
 /**
  * Created by zhizhao.zhang on 2019/03/01 11:30.
  * Description:
@@ -23,4 +25,5 @@ public class UserController extends BaseController<Long, User> {
         }
         return ((UserService) service).findByAccessKey(accessKey);
     }
+
 }

@@ -27,4 +27,5 @@ public class UserService extends JpaService<Long, User> {
     public User findByAccessKey(String accessKey) {
         return ((UserRepository) repository).findTopByAccessKey(accessKey);
     }
+
 }

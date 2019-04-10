@@ -31,7 +31,10 @@ public class User extends OJEntity {
     private String secretKey;
     @Enumerated(EnumType.STRING)
     private UserStatus status;
-    private String submitIds;
-    private String acceptIds;
     private String email;
+
+    @Override
+    public boolean isInvalid() {
+        return false;
+    }
 }
