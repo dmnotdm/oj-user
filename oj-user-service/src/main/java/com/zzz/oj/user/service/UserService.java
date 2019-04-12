@@ -7,6 +7,7 @@ import com.zzz.oj.user.repository.UserRepository;
 import com.zzz.util.jpa.service.JpaService;
 
 import org.springframework.stereotype.Service;
+import org.springframework.util.StringUtils;
 
 /**
  * Created by zhizhao.zhang on 2019/03/01 11:27.
@@ -21,6 +22,9 @@ public class UserService extends JpaService<Long, User> {
         user.setUpdateTime(now);
         user.setCreateTime(now);
         user.setStatus(ENABLE);
+        if (StringUtils.isEmpty(user.getNikName())) {
+            user.setNikName(user.getUsername());
+        }
         return repository.save(user);
     }
 

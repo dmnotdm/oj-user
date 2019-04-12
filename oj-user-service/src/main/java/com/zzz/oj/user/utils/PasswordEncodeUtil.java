@@ -4,6 +4,8 @@ import com.zzz.oj.user.bean.entity.User;
 
 import lombok.SneakyThrows;
 
+import org.springframework.util.StringUtils;
+
 import java.math.BigInteger;
 import java.security.MessageDigest;
 
@@ -14,8 +16,11 @@ import java.security.MessageDigest;
 public class PasswordEncodeUtil {
 
     @SneakyThrows
-    public static void EncodePwd(User user) {
+    public static void encodePwd(User user) {
         String password = user.getPassword();
+        if (StringUtils.isEmpty(password)) {
+            return;
+        }
         byte[] bytes = MessageDigest.getInstance("SHA1").digest(password.getBytes());
         user.setPassword(new BigInteger(bytes).toString(16));
     }
